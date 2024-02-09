@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+
+<section class ="desktop__container">
+
+  <section class ="header__wrapper">
+    <div class = "header__title">Learn to code by watching others</div>
+      <div class = "header__information">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable. </div>
+  </section>
+
+  <section class ="signup__wrapper">
+
+    <div class ="signup__blue__container">
+      <p class ="signup__information"><span>Try it free 7 days </span>then $20 thereafter</p>
+    </div>
+
+      <div class = "form__wrapper">
+
+        <div class ="form__feature margin__top">
+        <input type = "text" id ="first_name" placeholder="First Name">
+        <img class ="invalid__icon" id="invalid__icon__firstname" src="/images/icon-error.svg">
+        </div>
+
+        <p class = "invalid__text" id ="invalid__text__firstname">First Name cannot be empty</p>
+
+        <div class ="form__feature">
+        <input type = "text" id ="last_name" placeholder="Last Name">
+        <img class ="invalid__icon" id="invalid__icon__lastname" src="/images/icon-error.svg">
+        </div>
+
+        <p class = "invalid__text" id ="invalid__text__lastname">Last Name cannot be empty</p>
+
+
+        <div class ="form__feature">
+        <input type = "email" id ="email_address" placeholder="Email Address">
+        <img class ="invalid__icon" id="invalid__icon__email" src="/images/icon-error.svg">
+        </div>
+
+        <p class = "invalid__text" id ="invalid__text__email">Email Address cannot be empty</p>
+        
+
+        <div class ="form__feature">
+        <input type = "text" id ="password" placeholder="Password">
+        <img class ="invalid__icon" id="invalid__icon__password" src="/images/icon-error.svg">
+        </div>
+        
+        <p class = "invalid__text" id ="invalid__text__password">Password cannot be empty</p>
+
+
+        <button class ="form__button" onclick = ValidateForm()> Claim your free trial </button>
+        <div class = "form__tc">By clicking the button, you are agreeing to our <span class ="tc__bold">Terms and Services</span></div>
+      </div>
+
+  </section>
+</section>
+<script src="script.js"></script>
+</body>
+
+</html>
